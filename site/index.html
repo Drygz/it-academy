@@ -9,6 +9,7 @@
   <meta name="description" content="Интернет магазин техники Apple">
   <link rel="stylesheet" href="reset.css"> <!-- Сброс стилей -->
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -38,22 +39,51 @@
 
       </div>
     </div>
-    <nav class="menu wrapper">
-      <ul>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Ремонт</a></li>
-        <li><a href="#">Скидки</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="wrapper">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Ремонт</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    
   </header>
   
-  <main>
-    <!-- <div class="main"></div> -->
-    <aside></aside>
-    <!-- <div class="sidebar"></div> -->
+  <main class="main wrapper">
+    <div class="main__left">
+      <aside class="sidebar">
+        <ul class="sidebar__list">
+          <li>lorem1</li>
+          <li>lorem2</li>
+          <li>lorem3</li>
+          <li>lorem4</li>
+          <li>lorem5</li>
+        </ul>  
+      </aside>
+
+      <div class="info">
+        <div class="info__icon">
+          &#127776;
+        </div>
+        <div class="info__text">
+          <div class="info__text-title">
+            lorem
+          </div>
+          <div class="info__text-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, labore?
+          </div>
+        </div>
+      </div><!-- info end -->
+
+    </div>
+    <div class="main__right">right</div>
   </main>
+
+
   <footer>
     <div class="top">asd</div>
   </footer>
