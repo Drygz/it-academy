@@ -12,17 +12,17 @@ header {
   color: #fff; /* цвет текста */
 }
 
-header .top {
+.header__top {
   padding: 15px;
   background-color: rgb(44, 42, 42); /* цвет заливки блока */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .info {
+.header__info {
   display: block;
 }
-.top input {
+.header__top input {
   min-width: 250px;
   width: 100%;
 }
@@ -84,6 +84,10 @@ header .info {
   display: flex;
   padding: 15px;
   border: 1px solid black;
+}
+.info.active {
+  background-color: black;
+  color: #fff;
 }
 .info__icon {
   width: 20%;
