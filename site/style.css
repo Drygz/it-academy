@@ -102,27 +102,31 @@ header {
 .header__bottom-menu li:first-child a {
   padding-left: 0;
 }
-.header__bottom-menu li {
+.header__bottom-menu a {
   position: relative;
   height: 100%;
   padding: 15px;
 }
-.header__bottom-menu li::after,
-.header__bottom-menu li::before {
+.header__bottom-menu a::after,
+.header__bottom-menu a::before {
   content: '';
   position: absolute;
   bottom: 0;
   height: 1px;
   width: 0;
   background-color: var(--text);
+  transition: 0.3s ease-in width;
 }
-.header__bottom-menu li::after,
-.header__bottom-menu li::before {
-  width: 0;
+.header__bottom-menu a::after {
+  right: 0;
 }
-/* need fix */
-.header__bottom-menu li:hover .header__bottom-menu li::after,
-.header__bottom-menu li .header__bottom-menu li::before {
+.header__bottom-menu a::before {
+  left: 0;
+}
+.header__bottom-menu a:hover:after {
+  width: 50%;
+} 
+.header__bottom-menu a:hover:before {
   width: 50%;
 }
 .header__bottom-menu a {
