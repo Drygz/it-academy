@@ -12,6 +12,16 @@
 }
 .first-section__info {
   width: 35%;
+  padding-left: 15px;
+}
+.first-section__info .title {
+  font-size: 78px;
+  line-height: 90px;
+}
+.first-section__info .description {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 22px;
 }
 .first-section__image {
   width: 75%;
